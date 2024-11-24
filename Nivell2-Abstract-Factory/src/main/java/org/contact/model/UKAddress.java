@@ -1,6 +1,6 @@
-package org.example;
+package org.contact.model;
 
-public class UKAddress extends Address{
+public class UKAddress extends Address {
     private String county;
 
 

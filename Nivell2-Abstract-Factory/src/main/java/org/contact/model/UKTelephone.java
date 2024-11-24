@@ -1,6 +1,6 @@
-package org.example;
+package org.contact.model;
 
-public class UKTelephone extends Telephone{
+public class UKTelephone extends Telephone {
 
     public UKTelephone(String number) {
         super(number);

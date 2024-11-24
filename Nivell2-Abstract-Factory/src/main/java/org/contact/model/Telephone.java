@@ -1,4 +1,4 @@
-package org.example;
+package org.contact.model;
 
 public abstract class Telephone {
     protected String number;

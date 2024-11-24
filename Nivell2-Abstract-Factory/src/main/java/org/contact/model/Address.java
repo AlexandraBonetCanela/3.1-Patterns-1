@@ -1,4 +1,4 @@
-package org.example;
+package org.contact.model;
 
 public abstract class Address {
     protected String street;

@@ -1,4 +1,4 @@
-package org.example;
+package org.contact.model;
 
 public class USTelephone extends Telephone {
 

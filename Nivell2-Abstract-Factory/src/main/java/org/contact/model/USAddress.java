@@ -1,6 +1,6 @@
-package org.example;
+package org.contact.model;
 
-public class USAddress extends Address{
+public class USAddress extends Address {
     private String state;
 
     public USAddress(String street, String city, String postCode, String state) {
