@@ -9,7 +9,7 @@ public class Main {
         boolean finish = false;
         System.out.println("Welcome to AddYourCommandsApplication!");
         System.out.println("Add as many commands as you want, to undo last command type 'undo', to see last commands type 'history' and to finish type 'finish'");
-        Undo undo = Undo.getUndo();
+        Undo undo = Undo.getInstance();
 
         while (!finish){
             String command = scanner.nextLine();

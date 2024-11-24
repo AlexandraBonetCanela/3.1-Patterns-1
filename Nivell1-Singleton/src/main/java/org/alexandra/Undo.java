@@ -6,7 +6,11 @@ public class Undo {
     private static Undo undo;
     private ArrayList<String> commands = new ArrayList<>();
 
-    public static Undo getUndo() {
+    private Undo (){
+
+    }
+
+    public static Undo getInstance() {
         if (undo == null) {
             undo = new Undo();
         }
