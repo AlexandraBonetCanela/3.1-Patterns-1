@@ -15,6 +15,7 @@ public class USContactFactory implements ContactFactory {
 
     @Override
     public Address createAddress(String street, String city, String postCode, String state) {
+
         return new USAddress(street, city, postCode, state);
     }
 }

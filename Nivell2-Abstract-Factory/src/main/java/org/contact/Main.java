@@ -10,7 +10,7 @@ public class Main {
         Directory directory = new Directory();
 
         ContactFactory uSContact = new USContactFactory();
-        uSContact.createAddress("Trump street", "Ney York","0110", "New York");
+        uSContact.createAddress("Trump street", "New York","0110", "New York");
         uSContact.createTelephone("908668944");
 
         ContactFactory uKContact = new UKContactFactory();
