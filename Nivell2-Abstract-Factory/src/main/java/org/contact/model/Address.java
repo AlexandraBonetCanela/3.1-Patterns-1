@@ -11,4 +11,12 @@ public abstract class Address {
         this.postCode = postCode;
     }
     public abstract void getAddress();
+
+    @Override
+    public String toString() {
+        return "Address: " +
+                "street: " + street +
+                ", city: " + city +
+                ", postCode: " + postCode;
+    }
 }

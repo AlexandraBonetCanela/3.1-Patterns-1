@@ -10,6 +10,7 @@ public class USContactFactory implements ContactFactory {
 
     @Override
     public Telephone createTelephone(String number) {
+
         return new USTelephone(number);
     }
 

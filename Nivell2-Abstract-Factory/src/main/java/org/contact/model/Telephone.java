@@ -9,4 +9,9 @@ public abstract class Telephone {
     }
 
     public abstract void getTelephone();
+
+    @Override
+    public String toString() {
+        return "Telephone: " + prefix + number;
+    }
 }
