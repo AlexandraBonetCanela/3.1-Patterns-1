@@ -2,18 +2,14 @@ package org.alexandra;
 
 import java.util.ArrayList;
 
-public class Undo {
-    private static Undo undo;
+public class UndoClassLoad {
+    private static UndoClassLoad undo = new UndoClassLoad();
     private ArrayList<String> commands = new ArrayList<>();
 
-    private Undo (){
-
+    private UndoClassLoad(){
     }
 
-    public static Undo getInstance() {
-        if (undo == null) {
-            undo = new Undo();
-        }
+    public static UndoClassLoad getInstance() {
         return undo;
     }
 

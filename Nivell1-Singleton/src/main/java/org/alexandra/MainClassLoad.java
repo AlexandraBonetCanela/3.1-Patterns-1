@@ -2,7 +2,7 @@ package org.alexandra;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainClassLoad {
     private static boolean finish;
 
     public static void main(String[] args) {
@@ -11,7 +11,6 @@ public class Main {
         finish = false;
         System.out.println("Welcome to AddYourCommandsApplication!");
         System.out.println("Add as many commands as you want, to undo last command type 'undo', to see last commands type 'history' and to finish type 'finish'");
-        Undo undo = Undo.getInstance();
 
         while (!finish){
             String command = scanner.nextLine().toUpperCase();
@@ -26,15 +25,15 @@ public class Main {
                 finish = true;
                 break;
             case "UNDO":
-                Undo.getInstance().removeLastCommand();
+                UndoClassLoad.getInstance().removeLastCommand();
                 System.out.println("command undone");
                 break;
             case "HISTORY":
                 System.out.println("Last commands:");
-                Undo.getInstance().showHistory();
+                UndoClassLoad.getInstance().showHistory();
                 break;
             default:
-                Undo.getInstance().addCommand(command);
+                UndoClassLoad.getInstance().addCommand(command);
         }
     }
 }
